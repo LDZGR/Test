@@ -1,0 +1,46 @@
+狼途 LT84
+赤度 ABM066（套件）成品+150 Alice配列，打字爽的切带屏（电池小
+RK S75 旋钮比较麻烦
+VGN S99 比较麻将
+贱驴RS2 3.0
+RPOMAKER RT100 价格较高大电池
+NuPhy field 75 设计比较个性
+海盗船 K70 MAX 线性磁轴 爽的一批
+御斧 XL98 最喜欢的超大屏 小贵（对我来说是超级贵
+
+魔咖 3098V2
+高斯 XS75T
+柯芝 Z98 潮玩版
+迈从 K99
+达尔优 A98专业版 （虽然没有屏幕，但是有语音控制
+艾岩 TP87 双轨Gasket
+ROG 夜魔 白色 雪舞白轴
+
+
+
+application  ==> solver  test  utilities
+solver OpenFOAM求解器中各种标准求解器的原始代码
+test包含一些测试程序的源代码，为了测试OF中的某些类是否可用
+utilities包含OF中适合用程序源代码，网格工具、前处理工具、后处理工具等
+
+bin 提供了 OF 的许多外壳脚本，foamCleanTutorials、paraFoam等
+
+doc 提供使用说明书
+
+etc 环境设置文件
+
+platfoams 包含编译applications 目录下源代码产生的二进制文件和编译 src 目录下源代码产生的库文件
+
+src 存储了 of 所有基础库的源代码，是 OF 的核心文件夹 
+其中 OpenFOAM文件夹中提供了计算操作时使用的containers的定义、场的定义、网格和网格特征的生命，zones和sets等
+finiteVolume提供了有限体积离散时使用的所有类，mesh处理、有限离散体积算子和边界条件
+sixDoFRigidBodyMotion 提供了刚体运动求解器
+transportModels和TubulenceModels 提供了许多输运模型和紊流模型
+
+tutorials 提供了大量算例，将其按照场的类型分为子目录，每个子目录又按照受用的求解器不同进行分类。
+
+wmake 包含一些默认的编译器，以及用雷组织编译文件或者删除编译文件的脚本文件
+
+
+OpenFOAM 约定源代码后缀为 .C，头文件后缀为 .H 。需要理解的是，OpenFOAM “应用层面” 的 .H 文件更多只是为了对主源码按功能进行拆分，方便代码阅读和维护，所以并不是真实的头文件。这和 C++ 开发层面的头文件以及 OpenFOAM “源码层面”的头文件（如 $FOAM_SRC/OpenFOAM/dimensionSet.H）不同。
+
