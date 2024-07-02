@@ -1,0 +1,100 @@
+(R_Vu_1+R_Vu_2+R_Vu_3+R_Vu_4+R_Vu_11+R_Vu_12+R_Vu_13+R_Vu_14+R_Vu_15+R_Vu_16+R_Vu_17+R_Vu_18)  -   (S_Vu)  +  beta
+
+(R_Vu2o2_1+R_Vu2o2_2+R_Vu2o2_3+R_Vu2o2_4+R_Vu2o2_5+R_Vu2o2_6+R_Vu2o2_7+R_Vu2o2_8+R_Vu2o2_9+R_Vu2o2_10)  -   (S_Vu2o2)
+
+(R_Ui_1+R_Ui_2+R_Ui_3+R_Ui_4+R_Ui_5+R_Ui_6+R_Ui_7+R_Ui_8+R_Ui_9+R_Ui_10+R_Ui_14+R_Ui_15+R_Ui_16)   -   (S_Ui)  +  beta
+
+
+
+-thetax*epsilon2+epsilon*epsilonp*thetay
+-thetay*epsilon2-epsilon*epsilonp*thetax
+d(epsilon2,x)*thetax+d(epsilon2,y)*thetay+theta*(1-theta)*(theta-0.5+m)
+
+
+
+原神snapgenshin获取URL：
+power shell输入 ：iex "&{$(irm feixiaoqiu.com/link.ps1)} china"
+
+微信莫名无法接收发送图片
+我也是这种情况。清理微信的缓存之类的，也不管用。最后检查了一下具体的文件保存位置，修改好之后，重启微信就好了。（具体操作：电脑端微信-> 左下角微信（“三”的样子的标志) -> 设置->通用设置-> 文件管理 -> 更改）
+改成别的位置，重新登陆微信，提示错误，再改回原来位置即可
+
+
+
+Linux 中 LAMMPS安装：
+这里边
+1.mpich换成4.0.2 你的版本
+2.看见make -j就别用，忽略掉这几个字再运行
+3. mpich安装的时候configure用这句：
+./configure --disable-fortran --prefix=/usr/local
+4. lammps用你的软件包，名字应该是lammps-23Jun2022
+5. 测试用的路径记得改，我的是：
+/usr/local/bin/mpirun -n 2 /home/repo/Downloads/lammps-23Jun2022/src/lmp_mpi < in.deposit.atom
+
+/home/tt/Downloads/mpich/bin/mpirun -n 2 /home/tt/Downloads/lammps-23Jun2022/src/lmp_mpi < in.deposit.atom
+/home/tt/Downloads/lammps-23Jun2022/examples/deposit
+
+
+
+
+dns错误 处理方法
+win11 开始菜单搜索管理浏览器加载项，依次点击 连接选项卡-->局域网设置-->取消勾选代理服务器
+
+
+
+
+SRIM 简要（2022.10.04）
+TRIM中 右侧材料成分框中‘Disp’表示对应元素的离位阈能
+按要求输入对应数据后，点击右下角绿色按钮‘Save Input & Run TRIM’进行计算
+对于计算完成后的界面 一般使用左侧选项中’Damage Events‘，点击前方框打够，旁边‘F’按钮表示导出数据
+3-D选项中第一个 （之后增补吧）
+
+
+
+
+蓝牙选项消失问题
+笔记本蓝牙突然消失，无法重新启动蓝牙服务，在“设备管理器”中出现未识别设备。
+重装驱动、刷bios都无法解决
+原因是因为笔记本电脑上的静电导致蓝牙设备的无法正常启动，解决方法如下：
+
+1）关机，将电脑上所有的线都拔掉。长按开机电源键20秒，期间不要松手。20秒后重新开机。
+	这是笔记本电脑释放静电的操作。（一般点击关机，静待两三分钟重新开机就能解决）
+	注意！！点击重启是无法解决问题的，必须将电脑关机静置。（甚至可以不静置，但是一定要关机释放静电）
+
+2）如果第一个方法重复两次也无法解决问题，可以进行拆机，将笔记本电脑的电池与主板的bios电池扣掉
+	静置几分钟。如笔记本电脑位金属外壳，将其触碰一下金属管道之类物体。物理释放静电。
+
+（一般驱动没有卸载或者禁用，第一个方法便足够解决问题）
+（https://www.zhihu.com/question/49943281）（来源）
+
+
+
+微信莫名无法接收发送图片
+我也是这种情况。清理微信的缓存之类的，也不管用。最后检查了一下具体的文件保存位置，修改好之后，重启微信就好了。（具体操作：电脑端微信-> 左下角微信（“三”的样子的标志) -> 设置->通用设置-> 文件管理 -> 更改）
+改成别的位置，重新登陆微信，提示错误，再改回原来位置即可
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
